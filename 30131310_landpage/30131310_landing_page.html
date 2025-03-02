@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ASF Landing Page</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="30131310_styles.css" />
+    </head>
+    <body>
+        <header class="hero-section">
+            <nav class="logo-container">
+                <svg class="responsive-logo" aria-label="TechSolutions Logo">
+                    <use href="images/logo.svg#logo"></use>
+                </svg>
+            </nav>
+            <h1>Akhtar Semiconductor Fabrication</h1>
+        </header>
+
+        <main>
+            <section class="features-section">
+                <article class="feature" aria-labelledby="reasons-heading">
+                    <h2 id="reasons-heading">Top 5 Reasons to Choose Us</h2>
+                    <ol>
+                        <li>Quality Assurance</li>
+                        <li>24/7 Customer Support</li>
+                        <li>Affordable Pricing</li>
+                        <li>Expert Team</li>
+                        <li>Fast Delivery</li>
+                    </ol>
+                </article>
+                <article class="feature" aria-labelledby="products-heading">
+                    <h2 id="products-heading">Our Products Include:</h2>
+                    <ul>
+                        <li>Advanced Technology</li>
+                        <li>100% Reliability</li>
+                        <li>Cost-effective Solutions</li>
+                        <li>User-friendly Design</li>
+                    </ul>
+                    <button class="btn">Shop Now!</button>
+                </article>
+            </section>
+
+            <section class="about-section">
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <p>Information about the company.</p>
+                    <p>
+                        Click this link, it opens in a new window:
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                            target="_blank"
+                            rel="noopener"
+                            class="external-link"
+                            >MDN Docs</a
+                        >
+                    </p>
+                </div>
+                <div class="about-image">
+                    <picture>
+                        <source
+                            media="(max-width: 480px)"
+                            srcset="images/image-small.png"
+                        />
+                        <source
+                            media="(max-width: 768px)"
+                            srcset="images/image-medium.png"
+                        />
+                        <source
+                            media="(max-width: 1499px)"
+                            srcset="images/image-large.png"
+                        />
+                        <source
+                            media="(min-width: 1500px)"
+                            srcset="images/image-extra-large.png"
+                        />
+                        <img src="images/image-small.png" alt="" />
+                    </picture>
+                </div>
+            </section>
+        </main>
+
+        <footer class="cta-section">
+            <h2>Contact Us</h2>
+            <p>Reach out for custom solutions.</p>
+            <button class="btn">Contact Us</button>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+/* ===== Base Styles & Resets ===== */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+}
+
+/* ===== Responsive Logo ===== */
+.responsive-logo {
+    max-width: 180px;
+    height: auto;
+    margin: 1rem;
+}
+/* .logo-container {
+    margin-left: 80%;
+} */
+/* ===== Hero Section with Flourish ===== */
+.hero-section {
+    position: relative;
+    padding: 4rem 2rem;
+    justify-content: space-between;
+    background-image: url("images/background-large.jpg"),
+        url("images/background-large.jpg");
+    background-size: cover;
+}
+
+.hero-section h1 {
+    position: relative;
+    z-index: 2; /* Above flourish */
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #f0f0f0;
+}
+
+/* ===== Flexbox Features Section ===== */
+
+.features-section {
+    position: relative; /* Required for z-index context */
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+/* Flourish pseudo-element */
+.features-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/flourish.png") repeat;
+    background-size: 70%;
+    opacity: 0.15;
+    background-color: #000000;
+}
+
+/* Ensure feature content stays above flourish */
+.feature {
+    position: relative; /* Establishes stacking context */
+}
+
+.feature {
+    flex: 1 1 300px;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Grid About Section ===== */
+.about-section {
+    display: grid;
+    grid-template-areas: "content image";
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.about-content {
+    grid-area: content;
+}
+.about-image {
+    grid-area: image;
+}
+
+/* ===== Responsive Images ===== */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ===== Buttons & Interactions ===== */
+.btn {
+    padding: 0.8rem 1.5rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ===== Pseudo-Elements & Links ===== */
+a.external-link::after {
+    content: " ↗";
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+/* ===== Media Queries ===== */
+/* Hero Section Background */
+/* ===== Hero Section Background Images ===== */
+.hero-section {
+    background-image: url("images/background-extra-small.jpg");
+    background-size: cover;
+}
+
+/* Small Screens */
+@media (min-width: 1px) {
+    .hero-section {
+        background-image: url("images/background-small.jpg");
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 480px) {
+    .hero-section {
+        background-image: url("images/background-medium.jpg");
+    }
+}
+
+/* Large Screens */
+@media (min-width: 768px) {
+    .hero-section {
+        background-image: url("images/background-large.jpg");
+    }
+}
+
+/* Extra-Large Screens */
+@media (min-width: 1500px) {
+    .hero-section {
+        background-image: url("images/background-extra-large.jpg");
+    }
+}
+
+/* ===== Flourish Effect ===== */
+
+/* ===== Responsive Foreground Image ===== */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== Other Styles (Unchanged) ===== */
+/* (Keep all other CSS from previous answer as-is) */
+
+/* ===== Overrides ===== */
+header,
+section,
+footer {
+    text-align: left;
+    padding: 2rem;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #4a90e2, #2c3e50);
+    color: white;
+    text-align: center;
+}
